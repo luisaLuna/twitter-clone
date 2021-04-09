@@ -1,3 +1,5 @@
+import React from "react";
+import Sidebar from './Sidebar';
 import './App.css';
 
 function App() {
@@ -5,6 +7,9 @@ function App() {
     // BEM
     <div className="app">
       <h1>Hey let's build!</h1>
+
+      {/* Sidebar */}
+      <Sidebar/>
     </div>
   );
 }
