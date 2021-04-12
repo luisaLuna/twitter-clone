@@ -1,9 +1,13 @@
 import React from 'react'
+import './Feed.css';
 
 function Feed() {
     return (
-        <div>
-            <h2>This is the home</h2>            
+        <div className="Feed">
+            {/* Header */}
+            <div className="feed__header">
+                <h2>Home</h2>
+            </div>
         </div>
     )
 }
