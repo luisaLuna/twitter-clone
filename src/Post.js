@@ -18,24 +18,25 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                 <Avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQHqBza5afsKwg/profile-displayphoto-shrink_800_800/0/1585851680521?e=1623888000&v=beta&t=f4ZKHlol3KMEZj36zWGumeSC071ptmKUQi6c3Rt6de8"/>
+                <Avatar src={avatar}/>
             </div>
 
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Luisa Luna {" "}
+                            {displayName} {" "}
                             <span className="post__headerSpecial">
-                             <VerifiedUserIcon className="post__badge" /> @luisaLuna
+                           {verified && <VerifiedUserIcon className="post__badge" /> } @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>Post a Tweet to try the app</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://media.giphy.com/media/XbxZ41fWLeRECPsGIJ/giphy.gif" alt=""/>
+                <img src={image} alt="" />
+                
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
